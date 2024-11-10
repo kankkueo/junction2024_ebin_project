@@ -1,0 +1,33 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "declaration": true,
+    "moduleResolution": "node",
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipDefaultLibCheck": true,
+    "lib": [ "es6", "dom" ]
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot",
+    "./src/workers/**/*",
+    "dist",
+    "examples"
+  ],
+  "typedocOptions": {
+    "excludeExternals": true,
+    "excludePrivate": true,
+    "excludeInternal": true,
+    "exclude": ["**/workers", "node_modules", "**/shaders",  "**/*shader*"],
+    "out": "docs",
+    "entryPoints": ["./index.ts"],
+    "includeVersion": true,
+    "categorizeByGroup": false,
+    "categoryOrder": ["Core", "BCF", "Plugins", "*"],
+    "sort": ["alphabetical"],
+  }
+}

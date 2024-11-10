@@ -1,0 +1,13 @@
+ifc_files
+ten_framework
+XbimEssentials
+secret.txt
+*.wexBIM
+*.ifc
+proto.ipynb
+.vscode
+node_modules
+TEN-Agent
+__pycache__
+.env
+python/.env
